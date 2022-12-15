@@ -1,10 +1,13 @@
 const React = require("react")
+const DefaultLayout = require("./DefaultLayout")
 
 class Index extends React.Component {
    render() {
       const { games } = this.props
       return (
-         <div class="item-container">
+         <DefaultLayout title="SNESHub">
+         
+         <div className="item-container">
          <link rel="stylesheet" type="text/css" href="../css/index.css" />
 
             {games.map((game, i) => {
@@ -16,7 +19,8 @@ class Index extends React.Component {
                   </div>
                )
             })}
-         </div>
+            </div>
+            </DefaultLayout>
       )
    }
 }

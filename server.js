@@ -99,15 +99,20 @@ app.get("/games/new", (req, res) => {
 //Delete -- .delete/.findByIdAndDelete /photos/:id   -- delete specific photo
 app.delete("/games/:id", (req, res) => {
    Games.findByIdAndDelete(req.params.id, (err, data) => {
-      res.redirect("/games") //redirect back to index
+      res.redirect("/games") 
    })
 })
 //Update -- .put/.findByIdAndUpdate/.save() /photos/:id      -- update specific photo
 app.put("/games/:id", (req, res) => {
-   Games.findByIdAndUpdate(req.params.id, req.body, (err, game) => {
-      console.log(game)
-      res.redirect(`/games/${req.params.id}`) // redirecting to the Show page
-   })
+   if (req.body.remaining === "BUY") {
+      Games.findByIdAndUpdate(req.params.id, { $inc: { "remaining": -1 } }, (err, game) => {
+         res.redirect(`/games/${req.params.id}`) 
+      })
+   } else {
+      Games.findByIdAndUpdate(req.params.id, req.body, (err, game) => {
+         res.redirect(`/games/${req.params.id}`) 
+      })
+   }
 })
 //Create -- .post/.create /photos/        -- create new photo
 app.post("/games", (req, res) => {

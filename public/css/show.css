@@ -7,19 +7,35 @@
    margin: 0;
 }
 body{
+   height: 100vh;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   align-items: center;
  }
  img{
    display: block;
    margin: auto;
-   width: 50rem;
    height: 30rem;
  }
+ h1{
+   margin-bottom: 6rem;
+ }
  h2{
+   display: inline;
    text-align: center;
    margin: .5rem;
  }
  h3{
+   display: inline;
    margin: .5rem;
+ }
+ .description{
+   display: inline-block;
+   position: absolute;
+   width: 30rem;
+   right: 0;
+   top: 31rem;
+ }
+ .relative{
+   position: relative;
  }
