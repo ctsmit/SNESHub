@@ -1,0 +1,31 @@
+* {
+   box-sizing: border-box;
+}
+ :root {
+   background-color: #202020;
+   color: aquamarine;
+   margin: 0;
+}
+body{
+   display: flex;
+   justify-content: center;
+ }
+ .item-container{
+   display: grid;
+   grid-template-columns: repeat(2,16rem);
+   gap: 3rem;
+ }
+ img{
+   display: block;
+   margin: auto;
+   width: 15rem;
+   height: 10rem;
+ }
+ h5{
+   text-align: center;
+   margin: .5rem;
+ }
+ h4{
+   text-align: end;
+   margin: .5rem;
+ }

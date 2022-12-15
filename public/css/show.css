@@ -1,0 +1,25 @@
+* {
+   box-sizing: border-box;
+}
+ :root {
+   background-color: #202020;
+   color: aquamarine;
+   margin: 0;
+}
+body{
+   display: flex;
+   justify-content: center;
+ }
+ img{
+   display: block;
+   margin: auto;
+   width: 50rem;
+   height: 30rem;
+ }
+ h2{
+   text-align: center;
+   margin: .5rem;
+ }
+ h3{
+   margin: .5rem;
+ }
