@@ -57,11 +57,13 @@ a {
     grid-template-columns: 16rem;
   }
 }
-@media (orientation: landscape) and (pointer: coarse) { 
+
+@media (orientation: landscape) and (pointer: coarse) {
   .item-container {
     grid-template-columns: 16rem 16rem 16rem;
   }
 }
+
 @media (pointer: coarse) {
   .item {
     border: aquamarine 3px solid;

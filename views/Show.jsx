@@ -7,7 +7,7 @@ class Show extends React.Component {
       return (
          <DefaultLayout title="SNESHub">
             <a style={{ textDecoration: "none" }} href="/games/">BACK</a>
-          
+
             <div className="item-container">
                <link rel="stylesheet" type="text/css" href="/css/show.css" />
 
@@ -26,14 +26,14 @@ class Show extends React.Component {
                         <input className="buy-button" type="submit" name="remaining" value="BUY" />
                      </form>
                   )}
-                  
                </div>
-               <a style={{ textDecoration: "none" }} className="edit-link" href={`/games/${game.id}/edit`}>Edit?</a>
-                  <form action={`/games/${game.id}?method=DELETE`} method="POST">
-                     <input className="delete-button" type="submit" value="DELETE" />
-                  </form>
+               <a style={{ textDecoration: "none" }} className="edit-link" href={`/games/${game.id}/edit`}>
+                  Edit?
+               </a>
+               <form action={`/games/${game.id}?method=DELETE`} method="POST">
+                  <input className="delete-button" type="submit" value="DELETE" />
+               </form>
             </div>
-
          </DefaultLayout>
       )
    }

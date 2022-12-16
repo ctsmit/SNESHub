@@ -10,7 +10,7 @@ const Games = require("./models/Games")
 app.use(express.urlencoded({ extended: false })) //boilerplate code
 
 app.use(methodOverride("method"))
-app.use(express.static('public'))
+app.use(express.static("public"))
 
 app.set("view engine", "jsx") //(specifies what you are setting, the engine(jsx,ejs,pug))
 app.engine("jsx", require("express-react-views").createEngine())
@@ -40,18 +40,18 @@ app.get("/games/new", (req, res) => {
 //Delete -- .delete/.findByIdAndDelete /photos/:id   -- delete specific photo
 app.delete("/games/:id", (req, res) => {
    Games.findByIdAndDelete(req.params.id, (err, data) => {
-      res.redirect("/games") 
+      res.redirect("/games")
    })
 })
 //Update -- .put/.findByIdAndUpdate/.save() /photos/:id      -- update specific photo
 app.put("/games/:id", (req, res) => {
    if (req.body.remaining === "BUY") {
-      Games.findByIdAndUpdate(req.params.id, { $inc: { "remaining": -1 } }, (err, game) => {
-         res.redirect(`/games/${req.params.id}`) 
+      Games.findByIdAndUpdate(req.params.id, { $inc: { remaining: -1 } }, (err, game) => {
+         res.redirect(`/games/${req.params.id}`)
       })
    } else {
       Games.findByIdAndUpdate(req.params.id, req.body, (err, game) => {
-         res.redirect(`/games/${req.params.id}`) 
+         res.redirect(`/games/${req.params.id}`)
       })
    }
 })

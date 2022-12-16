@@ -1,17 +1,13 @@
 const React = require("react")
 const DefaultLayout = require("./DefaultLayout")
 
-const myStyle = {
-   color: "aquamarine",
-   backgroundColor: "#151515",
-}
 class Edit extends React.Component {
    render() {
       const { game } = this.props
       return (
          <DefaultLayout  title="SNESHub">
             <link rel="stylesheet" type="text/css" href="/css/edit.css" />
-            <a style={{ textDecoration: "none" }} href="/games/">BACK</a>
+            <a style={{ textDecoration: "none" }} href={`/games/${game.id}`}>BACK</a>
 
             <div>
                <form action={`/games/${game.id}?method=PUT`} method="POST">

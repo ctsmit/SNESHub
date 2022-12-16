@@ -10,10 +10,10 @@ class New extends React.Component {
 
             <a style={{ textDecoration: "none" }} href="/games/">BACK</a>
             <div>
-               <form action= "/games/" method="POST">
-                  Name: <input type="text" name="name" defaultValue='' />
+               <form action="/games/" method="POST">
+                  Name: <input type="text" name="name" defaultValue="" />
                   <br />
-                  Price: <input type="text" name="price" defaultValue=""/>
+                  Price: <input type="text" name="price" defaultValue="" />
                   <br />
                   Remaining: <input type="text" name="remaining" defaultValue="" />
                   <br />
