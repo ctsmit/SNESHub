@@ -7,7 +7,7 @@
   color: aquamarine;
   font-family: monospace;
   word-spacing: -.2rem;
-  font-size: 140%;
+  font-size: 135%;
   margin: 0;
 }
 
@@ -36,6 +36,7 @@ h1 {
 h5 {
   text-align: center;
   margin: .5rem;
+  font-weight: 500;
 }
 
 h4 {
@@ -48,8 +49,15 @@ h4 {
   border-radius: 8px;
 }
 
-a {
+.btn {
   margin-top: 1.5rem;
+  margin-left: .5rem;
+  background: aquamarine;
+  border-color: rgb(8, 8, 8);
+  border-radius: 5px;
+}
+.btn:hover {
+  background: whitesmoke;
 }
 
 @media (max-width: 481px) or (pointer: coarse) {

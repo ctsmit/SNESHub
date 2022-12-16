@@ -14,7 +14,7 @@ class Index extends React.Component {
                      <div className="item">
                         <h5>{game.name}</h5>
                         <a href={`/games/${game.id}`}>
-                           {game.img.includes("https://") ? (
+                           {game.img.includes("http") ? (
                               <img src={game.img} alt=" image is broken" />
                            ) : (
                               <img
@@ -28,9 +28,7 @@ class Index extends React.Component {
                   )
                })}
             </div>
-            <a style={{ textDecoration: "none" }} href="/games/new">
-               Add Game?
-            </a>
+            <form action={`/games/new`}><button className="btn">Add Game</button></form>
          </body>
       )
    }

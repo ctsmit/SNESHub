@@ -8,7 +8,7 @@ class New extends React.Component {
          <DefaultLayout title="Add Game to Storefront">
             <link rel="stylesheet" type="text/css" href="/css/edit.css" />
 
-            <a style={{ textDecoration: "none" }} href="/games/">BACK</a>
+            <form action="/games/"><button className="btn">Home</button></form>
             <div>
                <form action="/games/" method="POST">
                   Name: <input type="text" name="name" defaultValue="" />
@@ -17,11 +17,11 @@ class New extends React.Component {
                   <br />
                   Remaining: <input type="text" name="remaining" defaultValue="" />
                   <br />
-                  ImageURL: <input type="text" name="img" defaultValue="https://" />
+                  ImageURL: <input type="text" name="img" defaultValue="" />
                   <br />
                   Description: <input type="text" name="description" defaultValue="" />
                   <br />
-                  <input type="submit" name="" value="Add Game" />
+                  <input className="btn" type="submit" name="" value="Add Game" />
                </form>
             </div>
          </DefaultLayout>

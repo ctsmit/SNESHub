@@ -7,7 +7,7 @@ class Edit extends React.Component {
       return (
          <DefaultLayout  title="SNESHub">
             <link rel="stylesheet" type="text/css" href="/css/edit.css" />
-            <a style={{ textDecoration: "none" }} href={`/games/${game.id}`}>BACK</a>
+            <form action={`/games/${game.id}`}><button className="btn">Back</button></form>
 
             <div>
                <form action={`/games/${game.id}?method=PUT`} method="POST">
@@ -21,7 +21,7 @@ class Edit extends React.Component {
                   <br />
                   Description: <input type="text" name="description" defaultValue={game.description} />
                   <br />
-                  <input type="submit" name="" value="Update Game" />
+                  <input className="btn" type="submit" name="" value="Update Game" />
                </form>
             </div>
          </DefaultLayout>
