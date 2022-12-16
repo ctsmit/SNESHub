@@ -8,6 +8,7 @@ class Index extends React.Component {
          <body>
             <link rel="stylesheet" type="text/css" href="/css/index.css" />
             <h1>SNESHub</h1>
+            <p className="header">Your one stop shop for SNES games</p>
             <div className="item-container">
                {games.map((game, i) => {
                   return (

@@ -6,8 +6,7 @@
    background-color: #202020;
    color: aquamarine;
    font-family: monospace;
-   font-size: 150%;
-
+   font-size: 135%;
    margin: 0;
 }
 
@@ -27,13 +26,10 @@ input {
    border-color: aquamarine;
 }
 
-h1 {
-   margin: .5rem;
-}
-
 .btn {
-   margin: .5rem 0 2rem 0;
-   background: aqua;
+   margin-top: .3rem;
+   margin-bottom: 2rem;
+   background: aquamarine;
    border-color: rgb(8, 8, 8);
    border-radius: 5px;
  }

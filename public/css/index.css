@@ -30,7 +30,10 @@ img {
 }
 
 h1 {
-  margin-bottom: 6rem;
+  margin-bottom: 0;
+}
+.header {
+  margin-bottom: 5rem;
 }
 
 h5 {
@@ -51,7 +54,6 @@ h4 {
 
 .btn {
   margin-top: 1.5rem;
-  margin-left: .5rem;
   background: aquamarine;
   border-color: rgb(8, 8, 8);
   border-radius: 5px;
