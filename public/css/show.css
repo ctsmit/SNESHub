@@ -59,7 +59,7 @@ p {
   margin-top: 4rem;
   padding: .5rem;
   padding-bottom: 0;
-  min-height: 70%;
+  min-height: 68%;
 }
 
 .btn {
@@ -87,7 +87,7 @@ form{
 @media (pointer: coarse) {
   .item {
     border: aquamarine 3px solid;
-    min-height: 30%;
+    min-height: 31%;
   }
 }
 @media (pointer: coarse) and (orientation: landscape) {
