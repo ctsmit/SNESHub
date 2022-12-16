@@ -13,7 +13,14 @@ class Show extends React.Component {
 
                <div className="relative item">
                   <h2>{game.name}</h2>
-                  <img src={game.img} alt="your image is broken" />
+                  {game.img.includes("https://") ? (
+                     <img src={game.img} alt=" image is broken" />
+                  ) : (
+                     <img
+                        src="https://www.giantbomb.com/a/uploads/original/8/87790/2879484-smw_jpnbox.png"
+                        alt="image is broken"
+                     />
+                  )}
                   <h3>{game.price}</h3>
                   <br />
 

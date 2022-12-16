@@ -14,7 +14,14 @@ class Index extends React.Component {
                      <div className="item">
                         <h5>{game.name}</h5>
                         <a href={`/games/${game.id}`}>
-                           <img src={game.img} alt="your image is broken" />
+                           {game.img.includes("https://") ? (
+                              <img src={game.img} alt=" image is broken" />
+                           ) : (
+                              <img
+                                 src="https://www.giantbomb.com/a/uploads/original/8/87790/2879484-smw_jpnbox.png"
+                                 alt="image is broken"
+                              />
+                           )}
                         </a>
                         <h4>{game.price}</h4>
                      </div>
