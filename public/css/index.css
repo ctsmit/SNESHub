@@ -1,34 +1,69 @@
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
- :root {
-   background-color: #202020;
-   color: aquamarine;
-   margin: 0;
+
+:root {
+  background-color: #202020;
+  color: aquamarine;
+  font-family: monospace;
+  word-spacing: -.2rem;
+  font-size: 140%;
+  margin: 0;
 }
-body{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- .item-container{
-   display: grid;
-   grid-template-columns: repeat(2,16rem);
-   gap: 3rem;
- }
- img{
-   display: block;
-   margin: auto;
-   max-height: 10rem;
- }
- h1{
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(2, 18rem);
+  gap: 3rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-height: 10rem;
+}
+
+h1 {
   margin-bottom: 6rem;
 }
- h5{
-   text-align: center;
-   margin: .5rem;
- }
- h4{
-   text-align: end;
-   margin: .5rem;
- }
+
+h5 {
+  text-align: center;
+  margin: .5rem;
+}
+
+h4 {
+  text-align: end;
+  margin: .5rem;
+}
+
+.item {
+  border: aquamarine 1px solid;
+  border-radius: 8px;
+}
+
+a {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 481px) or (pointer: coarse) {
+  .item-container {
+    grid-template-columns: 16rem;
+  }
+}
+@media (orientation: landscape) and (pointer: coarse) { 
+  .item-container {
+    grid-template-columns: 16rem 16rem 16rem;
+  }
+}
+@media (pointer: coarse) {
+  .item {
+    border: aquamarine 3px solid;
+  }
+}

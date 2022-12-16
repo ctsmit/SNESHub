@@ -4,6 +4,10 @@
  :root {
    background-color: #202020;
    color: aquamarine;
+   font-family: monospace;
+  word-spacing: -.2rem;
+  font-size: 140%;
+
    margin: 0;
 }
 body{
@@ -16,10 +20,9 @@ body{
    display: block;
    margin: auto;
    height: 30rem;
+   width: 50rem;
  }
- h1{
-   margin-bottom: 6rem;
- }
+ 
  h2{
    display: inline;
    text-align: center;
@@ -32,10 +35,35 @@ body{
  .description{
    display: inline-block;
    position: absolute;
-   width: 30rem;
-   right: 0;
-   top: 31rem;
+   line-height: 95%;
+   width: 35rem;
+   right: 1rem;
+   top: 31.3rem;
  }
  .relative{
    position: relative;
  }
+ .item-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 6rem;
+ }
+ .item {
+   border: aquamarine 1px solid;
+   border-radius: 8px;
+   padding: .5rem;
+   margin-bottom: 1rem;
+  }
+  .delete-button {
+      margin-top: 3rem;
+  }
+  .buy-button {
+      margin-left: .5rem;
+      margin-top: .3rem;
+  }
+  @media (pointer: coarse) {
+    .item {
+      border: aquamarine 3px solid;
+    }
+  }
