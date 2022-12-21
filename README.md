@@ -5,6 +5,7 @@ A retro styled SNES game shop made with JS, the MERN stack, and CSS.
 [![watch here]]()
 
 # About
+
 In this store you are able to add games, edit games, and buy games to simulate a low stock and sold out appearance.
 
 ###To add items:
