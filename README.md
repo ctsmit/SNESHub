@@ -40,5 +40,6 @@ npm i
 
 # Credits
 Thank you to Cycle 28 and our amazing teachers.
+
 Pictures from: https://www.giantbomb.com/app.php/super-nintendo-entertainment-system/3045-9/
 
