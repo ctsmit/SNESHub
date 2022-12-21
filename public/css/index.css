@@ -14,12 +14,13 @@
 body {
   text-align: center;
   width: 100%;
+  margin: 0;
 }
 
 .item-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  max-width: 90vw;
+  padding: 1rem;
   margin: auto;
   gap: 2rem;
 }
@@ -83,14 +84,20 @@ h4 {
 
  @media (pointer: coarse) and (orientation: landscape) {  
   .item-container {
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .item {
+    border-width: 3px;  
   }
 } 
- @media (pointer: coarse) and (orientation: portrait) {  
+@media (pointer: coarse) and (orientation: portrait) {  
   :root{
-    font-size: 300%;
+    font-size: 250%;
   }
   .item-container {
-    grid-template-columns: repeat(1, 1fr);   
+    grid-template-columns: repeat(1, 1fr);  
+  }
+  .item {
+    border-width: 3px;  
   }
 } 
