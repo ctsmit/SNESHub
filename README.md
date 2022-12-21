@@ -24,13 +24,21 @@ In this store you are able to add, edit, delete, and buy games to simulate a low
 
 ### To clone my repo:
 
-- git clone https://github.com/ctsmit/SNESHub.git
+- `git clone https://github.com/ctsmit/SNESHub.git`
 
-### Install dependencies :
+### Install dependencies:
 
-- npm init -y 
+- `npm init -y`
+- `npm i`
+- `npm i -g nodemon`
 
-- npm i
+### Create .nvm file:
+
+- Create a .env file and link to a MongoDB database
+
+### Start App:
+
+- you should then be able to run nodemon and have the app open in http://localhost:3000/games
 
 # Technologies Used
 - **React.js** for front-end development. 
