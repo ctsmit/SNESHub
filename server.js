@@ -7,12 +7,12 @@ const methodOverride = require("method-override")
 
 const Games = require("./models/Games")
 
-app.use(express.urlencoded({ extended: false })) //boilerplate code
+app.use(express.urlencoded({ extended: false })) 
 
 app.use(methodOverride("method"))
 app.use(express.static("public"))
 
-app.set("view engine", "jsx") //(specifies what you are setting, the engine(jsx,ejs,pug))
+app.set("view engine", "jsx") 
 app.engine("jsx", require("express-react-views").createEngine())
 
 // setting up mongoose------------------------------------------
@@ -29,7 +29,7 @@ mongoose.connect(
 app.get("/games", (req, res) => {
    Games.find({}, (error, games) => {
       res.render("Index", {
-         games: games, // getting all items from db to pass as props
+         games: games,
       })
    })
 })
@@ -66,7 +66,7 @@ app.get("/games/:id/edit", (req, res) => {
    Games.findById(req.params.id, (err, game) => {
       if (!err) {
          res.render("Edit", {
-            game: game, //pass in the found items so we can prefill the form
+            game: game,
          })
       } else {
          res.send({ msg: err.message })

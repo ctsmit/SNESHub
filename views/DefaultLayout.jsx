@@ -5,7 +5,7 @@ class DefaultLayout extends React.Component {
       return (
          <html>
             <head>
-               <title>{this.props.title}</title>
+               <title>SNESHub</title>
             </head>
             <body>
                <h1>{this.props.title}</h1>

@@ -6,8 +6,9 @@ class Index extends React.Component {
       const { games } = this.props
       return (
          <DefaultLayout title= "SNESHub">
+         <link rel="stylesheet" type="text/css" href="/css/index.css" />
+            
          <body>
-            <link rel="stylesheet" type="text/css" href="/css/index.css" />
             <p className="header">Your one stop shop for SNES games</p>
             <div className="item-container">
                {games.map((game, i) => {
@@ -25,9 +26,11 @@ class Index extends React.Component {
                            )}
                         </a>
                        <div className="flex-container">
-                        <p className="red-text"> {game.remaining < 3 && (
-                           game.remaining < 1 ? "SOLD OUT!!" : `${game.remaining} remaining!`
-                           )}</p><h4>{game.price}</h4>
+                           <p className="red-text"> {game.remaining < 3 && (
+                              game.remaining < 1 ? "SOLD OUT!!" : `Only ${game.remaining} available!`
+                           )}
+                           </p>
+                           <h4>{game.price}</h4>
                         </div>
                      </div>
                   )

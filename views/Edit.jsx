@@ -7,6 +7,7 @@ class Edit extends React.Component {
       return (
          <DefaultLayout  title="SNESHub Edit Game Page">
             <link rel="stylesheet" type="text/css" href="/css/edit.css" />
+            
             <form action={`/games/${game.id}`}><button className="btn">Back</button></form>
 
             <div>

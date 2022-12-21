@@ -9,6 +9,7 @@ class New extends React.Component {
             <link rel="stylesheet" type="text/css" href="/css/edit.css" />
 
             <form action="/games/"><button className="btn">Home</button></form>
+            
             <div>
                <form action="/games/" method="POST">
                   Name: <input type="text" name="name" defaultValue="" />

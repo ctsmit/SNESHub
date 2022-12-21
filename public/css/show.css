@@ -23,9 +23,11 @@ img {
   height: 30rem;
   width: 50rem;
 }
+
 h1 {
   margin-bottom: .5rem;
 }
+
 h2 {
   display: inline;
   text-align: center;
@@ -68,32 +70,28 @@ p {
   border-color: rgb(8, 8, 8);
   border-radius: 5px;
 }
+
 .btn:hover {
   background: whitesmoke;
 }
+
 .buy-button {
   position: absolute;
   margin: 0;
   margin-left: .5rem;
   font-size: 120%;
 }
+
 .buy-button:hover {
   background: rgb(121, 17, 17);
 }
-form{
+
+form {
   display: inline;
 }
 
 @media (pointer: coarse) {
   .item {
     border: aquamarine 3px solid;
-    width: max-content;
-    min-height: 31%;
-  }
-}
-@media (pointer: coarse) and (orientation: landscape) {
-  .item {
-    border: aquamarine 3px solid;
-    min-height: max-content;
   }
 }

@@ -7,17 +7,15 @@ class Show extends React.Component {
       return (
          <DefaultLayout title="SNESHub">
             <link rel="stylesheet" type="text/css" href="/css/show.css" />
+            
             <form action="/games/"><button className="btn">Home</button></form>
 
-            <div className="relative item">
+            <div className="item">
                <h2>{game.name}</h2>
                {game.img.includes("https://") ? (
                   <img src={game.img} alt=" image is broken" />
                ) : (
-                  <img
-                     src="https://www.giantbomb.com/a/uploads/original/8/87790/2879484-smw_jpnbox.png"
-                     alt="image is broken"
-                  />
+                  <img src="https://www.giantbomb.com/a/uploads/original/8/87790/2879484-smw_jpnbox.png" alt="image is broken"/>
                )}
                <p>{game.price}</p>
                <br />

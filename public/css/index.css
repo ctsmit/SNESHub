@@ -82,22 +82,23 @@ h4 {
   background: whitesmoke;
 }
 
- @media (pointer: coarse) and (orientation: landscape) {  
+@media (pointer: coarse) and (orientation: landscape) {
   .item-container {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
   }
   .item {
-    border-width: 3px;  
+    border-width: 3px;
   }
-} 
-@media (pointer: coarse) and (orientation: portrait) {  
-  :root{
+}
+
+@media (pointer: coarse) and (orientation: portrait) {
+  :root {
     font-size: 250%;
   }
   .item-container {
-    grid-template-columns: repeat(1, 1fr);  
+    grid-template-columns: repeat(1, 1fr);
   }
   .item {
-    border-width: 3px;  
+    border-width: 3px;
   }
-} 
+}
