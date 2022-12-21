@@ -38,6 +38,10 @@ p {
   margin: .5rem;
 }
 
+.remain {
+  color: rgb(121, 17, 17);
+}
+
 .description {
   display: inline-block;
   position: absolute;
@@ -49,17 +53,13 @@ p {
   top: 32rem;
 }
 
-.relative {
-  position: relative;
-}
-
 .item {
-  border: aquamarine 1px solid;
+  position: relative;
+  border: aquamarine 2px solid;
   border-radius: 8px;
   margin-top: 4rem;
   padding: .5rem;
-  padding-bottom: 0;
-  min-height: 68%;
+  padding-bottom: 2.3rem;
 }
 
 .btn {
@@ -87,12 +87,13 @@ form{
 @media (pointer: coarse) {
   .item {
     border: aquamarine 3px solid;
+    width: max-content;
     min-height: 31%;
   }
 }
 @media (pointer: coarse) and (orientation: landscape) {
   .item {
     border: aquamarine 3px solid;
-    min-height: 150%;
+    min-height: max-content;
   }
 }

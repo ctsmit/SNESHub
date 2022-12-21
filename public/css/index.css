@@ -12,26 +12,33 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .item-container {
   display: grid;
-  grid-template-columns: repeat(2, 18rem);
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  max-width: 90vw;
+  margin: auto;
+  gap: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 img {
   display: block;
   margin: auto;
-  max-height: 10rem;
+  max-height: 11.5rem;
 }
 
 h1 {
   margin-bottom: 0;
 }
+
 .header {
   margin-bottom: 5rem;
 }
@@ -42,14 +49,25 @@ h5 {
   font-weight: 500;
 }
 
+.red-text {
+  margin: .5rem;
+  color: rgb(121, 17, 17);
+  font-weight: bolder;
+}
+
 h4 {
-  text-align: end;
   margin: .5rem;
 }
 
 .item {
-  border: aquamarine 1px solid;
+  border: aquamarine 2px solid;
   border-radius: 8px;
+}
+
+.item:hover {
+  background: rgba(127, 255, 212, 0.1);
+  box-shadow: 0 0 5px hsl(160, 100%, 35%), 0 0 20px hsl(160, 100%, 35%), 0 0 40px hsl(160, 100%, 35%);
+  transition-duration: 0.5s;
 }
 
 .btn {
@@ -58,24 +76,21 @@ h4 {
   border-color: rgb(8, 8, 8);
   border-radius: 5px;
 }
+
 .btn:hover {
   background: whitesmoke;
 }
 
-@media (max-width: 481px) or (pointer: coarse) {
+ @media (pointer: coarse) and (orientation: landscape) {  
   .item-container {
-    grid-template-columns: 16rem;
+    grid-template-columns: repeat(3, 1fr);   
   }
-}
-
-@media (orientation: landscape) and (pointer: coarse) {
+} 
+ @media (pointer: coarse) and (orientation: portrait) {  
+  :root{
+    font-size: 300%;
+  }
   .item-container {
-    grid-template-columns: 16rem 16rem 16rem;
+    grid-template-columns: repeat(1, 1fr);   
   }
-}
-
-@media (pointer: coarse) {
-  .item {
-    border: aquamarine 3px solid;
-  }
-}
+} 

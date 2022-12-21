@@ -5,7 +5,7 @@ class Edit extends React.Component {
    render() {
       const { game } = this.props
       return (
-         <DefaultLayout  title="SNESHub">
+         <DefaultLayout  title="SNESHub Edit Game Page">
             <link rel="stylesheet" type="text/css" href="/css/edit.css" />
             <form action={`/games/${game.id}`}><button className="btn">Back</button></form>
 
