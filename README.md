@@ -7,12 +7,12 @@ A retro styled SNES game shop made with JS, the MERN stack, and CSS.
 # About
 In this store you are able to add games, edit games, and buy games to simulate a low stock and sold out appearance.
 
-##To add items:
+###To add items:
 
 - Go to "Add a new item" in the nav bar and fill out the form.
 - Hit the "add" button and go back to the shop tab to see the changes!
 
-##To check item's info:
+###To check item's info:
 
 - Click on the item's image to redirected to the "Show" page where the price, description and name of the product is show. 
 - Users have the option to buy, edit, or delete any product. Keep in mind once a product have been deleted they will have to create it from scratch if they want it back.
