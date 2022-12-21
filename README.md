@@ -2,7 +2,7 @@
 A retro styled SNES game shop made with JS, the MERN stack, and CSS. 
  
 # Video Link
-[![watch here]]()
+[![watch here]](https://youtu.be/2A1znIaoaGM)
 
 # About
 
