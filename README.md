@@ -28,14 +28,20 @@ git clone https://github.com/ctsmit/SNESHub.git
 ### Install dependencies :
 
 npm init -y 
+
 npm i
 
 # Technologies Used
 **React.js** for front-end development. 
+
 **Node.js** as runtime enviroment of JS.
+
 **Mongoose** as library for MongoDB.
+
 **Express.js** as framework.
+
 **MongoDB** as database for storing items in a collection.
+
 **Vanilla CSS** for styling
 
 # Credits
