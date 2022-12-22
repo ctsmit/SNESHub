@@ -1,8 +1,10 @@
 # SNESHub
 A retro styled SNES game shop made with JS, the MERN stack, and CSS. 
  
+# Screenshots
+
 # Video Link
-[![watch here]](https://youtu.be/2A1znIaoaGM)
+[watch here](https://youtu.be/2A1znIaoaGM)
 
 # About
 
