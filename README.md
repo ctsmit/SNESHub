@@ -69,4 +69,4 @@ Thank you to Cycle 28 and our amazing teachers:
 Pictures from: https://www.giantbomb.com/app.php/super-nintendo-entertainment-system/3045-9/
 
 # Disclaimer
-I am not affiliated with nor own any rights regarding this store app's inventory or image url source. No profits were generated from this project. All materials utilized were for educational and demonstration purposes only.
+I am not affiliated with nor own any rights regarding this store app's inventory or image url source. No profits were generated from this project. All materials utilized were for educational and demonstration purposes only. Nintendo please no sue. :)
