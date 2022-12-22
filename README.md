@@ -20,6 +20,9 @@ In this store you are able to add, edit, delete, and buy games to simulate a low
 ### To edit or delete a game:
 
 - Click on either "Edit Item?" or "Delete" at the bottom of the game show page.
+# Motivation
+
+I am enrolled in a software engineering bootcamp (15wks). This was our second project assignment on week 10. We were tasked with creating a store front with various functionalities.
 
 # Installation
 
