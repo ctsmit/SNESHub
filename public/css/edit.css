@@ -30,7 +30,7 @@ input {
    margin-top: .3rem;
    margin-bottom: 2rem;
    background: aquamarine;
-   border-color: rgb(8, 8, 8);
+   border-color: rgb(153, 153, 153);
    border-radius: 5px;
  }
  .btn:hover {
