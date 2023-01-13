@@ -26,6 +26,13 @@ mongoose.connect(
 )
 
 //Index  -- .get/.find /photos/         -- display a list of all
+app.get("/", (req, res) => {
+   Games.find({}, (error, games) => {
+      res.render("Index", {
+         games: games,
+      })
+   })
+})
 app.get("/games", (req, res) => {
    Games.find({}, (error, games) => {
       res.render("Index", {

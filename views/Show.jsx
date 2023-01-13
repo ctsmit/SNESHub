@@ -12,7 +12,7 @@ class Show extends React.Component {
 
             <div className="item">
                <h2>{game.name}</h2>
-               {game.img.includes("https://") ? (
+               {game.img.includes("http") ? (
                   <img src={game.img} alt=" image is broken" />
                ) : (
                   <img src="https://www.giantbomb.com/a/uploads/original/8/87790/2879484-smw_jpnbox.png" alt="image is broken"/>
